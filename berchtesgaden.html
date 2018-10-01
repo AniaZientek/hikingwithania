@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hiking with Ania">
+    <meta name="keywords" content="Ania, travel, map, hiking, geography, Berchtesgaden">
+    <meta name="author" content="Ania Zientek">
+    <title>HwA | Berchtesgaden</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/logo_tab.png">
+    <link href="https://fonts.googleapis.com/css?family=K2D|Nunito|Amatic+SC:400,700" rel="stylesheet">
+    <!-- API mapy.cz
+    <script type="text/javascript" src="https://api.mapy.cz/loader.js"></script>
+    <script type="text/javascript">Loader.load()</script>
+    -->
+  </head>
+
+  <body>
+    <header>
+      <div class="headercontainer">
+        <div id="navbar-left">
+          <ul>
+            <li class="current"><a href ="berchtesgaden.html">Berchtesgaden National Park</li>
+          </ul>
+        </div>
+        <div id="navbar-right">
+          <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="general.html">General&nbsptips</a></li>
+          </ul>
+        </div>
+    </header>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+      <!-- Full-width images with caption text -->
+      <div class="myslides">
+        <img src="./img/slides/berchtesgaden/obersee.jpg" style="width:100%">
+        <div class="text">Obersee</div>
+      </div>
+
+      <div class="myslides">
+        <img src="./img/slides/berchtesgaden/konigssee.jpg" style="width:100%">
+        <div class="text">Königssee</div>
+      </div>
+
+      <div class="myslides">
+        <img src="./img/slides/berchtesgaden/watzmannhaus.jpg" style="width:100%">
+        <div class="text">Watzmannhaus</div>
+      </div>
+
+      <div class="myslides">
+        <img src="./img/slides/berchtesgaden/kehlstein.jpg" style="width:100%">
+        <div class="text">Kehlstein</div>
+      </div>
+
+      <div class="myslides">
+        <img src="./img/slides/berchtesgaden/trail_purtschellerhaus.jpg" style="width:100%">
+        <div class="text">Purtschellerhaus</div>
+      </div>
+
+      <div class="myslides">
+        <img src="./img/slides/berchtesgaden/kuhroint.jpg" style="width:100%">
+        <div class="text">St. Bernhard - Kühroint</div>
+      </div>
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+
+    <div class="container">
+      <h2>When: </h2>
+      <p>20 - 26th August 2017</p>
+      <h2>Where we slept: </h2>
+      <p><a href="http://www.camping-grafenlehen.de" target="_blank">Campingplatz Grafenlehen</a></p>
+      <p>Price for 6 nights (1 pitch, 2 small tents, 3 people, 1 car) was ca €250</p>
+      <h2>Hike 1</h2>
+        <h3>Popis</h3>
+        <p>Trasy</p>
+        <p>View trail on <a href="https://mapy.cz/s/35eXl"> mapy.cz</a></p>
+      <h2>Hike 2</h2>
+        <p>Popis</p>
+        <p>Trasy</p>
+        <p>Odkaz na mapy.cz</p>
+      <h2>Hike 3</h2>
+        <p>Popis</p>
+        <p>Trasy</p>
+        <p>Odkaz na mapy.cz</p>
+
+        <!-- mapycz
+        <div id="controls"><div class="selectbtn">Select layer: </div>
+           <select>
+              <option>Turist</option>
+              <option>Aerial</option>
+              <option>Base</option>
+           </select>
+         </div>
+         <div id="mapycz" style="height:400px"></div>
+         -->
+
+
+
+    <div class="youtube-video">
+      <h2>Check out my video</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/9OVX3Bnr0N8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <button onclick="topFunction()" id="scrollup" title="Go to top">Top</button>
+    </div>
+    <footer>
+      <div class="container">
+        <div id="main-footer">
+          <p>Hiking with Ania &copy; 2018</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+
+<!-- slideshow javascript -->
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("myslides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+
+  <!-- Scrolling up; When the user scrolls down 20px from the top of the document, show the button-->
+  <script>
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("scrollup").style.display = "block";
+      } else {
+          document.getElementById("scrollup").style.display = "none";
+      }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+  </script>
+
+<!-- mapycz javascript
+  <script>
+  var center = SMap.Coords.fromWGS84(12.9882231, 47.5886942);
+  var m = new SMap(JAK.gel("mapycz"), center, 12);
+  var layers = {};
+
+  layers[SMap.DEF_TURIST] = m.addDefaultLayer(SMap.DEF_TURIST);
+  layers[SMap.DEF_OPHOTO] = m.addDefaultLayer(SMap.DEF_OPHOTO);
+  layers[SMap.DEF_HYBRID] = m.addDefaultLayer(SMap.DEF_HYBRID);
+  layers[SMap.DEF_BASE] = m.addDefaultLayer(SMap.DEF_BASE);
+  layers[SMap.DEF_TURIST].enable(); /*default layer - turist*/
+  m.addDefaultControls();
+
+  var switchLayer = function(e, elm) {
+      for (var p in layers) { layers[p].disable(); }
+      switch (elm.selectedIndex) {
+          case 0:
+              layers[SMap.DEF_TURIST].enable();
+          break;
+          case 1:
+              layers[SMap.DEF_OPHOTO].enable();
+              layers[SMap.DEF_HYBRID].enable();
+          break;
+          case 2:
+              layers[SMap.DEF_BASE].enable();
+          break;
+      }
+  }
+
+  var s = JAK.mel("select");
+  JAK.gel("controls").innerHTML = "Select layer: ";
+  JAK.gel("controls").appendChild(s);
+  var names = ["Turist", "Aerial","Base"]
+  for (var i=0; i<names.length; i++) {
+      var o = JAK.mel("option");
+      o.innerHTML = names[i];
+      s.appendChild(o);
+  }
+  var e = JAK.Events.addListener(s, "change", window, switchLayer);
+
+  </script>
+  -->

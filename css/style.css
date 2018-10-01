@@ -1,0 +1,370 @@
+/*general, for all sites*/
+body{
+  font: 15px/1.5 "Courier New";
+  padding:0;
+  margin:0;
+  background-color: #363738; /*#eff0f7*/
+}
+
+.container{
+  width: 100%;
+  max-width:1080px;
+  margin:auto;
+  overflow:hidden;
+  color:#ffffff;
+  font-family: 'Amatic SC', sans-serif;
+  padding-left: 10px;
+}
+
+
+.container h1{
+  font-size: 22px;
+  color:#ffffff;
+}
+
+.container h2{
+  font-size: 20px;
+  color:#ffffff;
+}
+
+.container h3{
+  font-size: 18px;
+  color:#ffffff;
+}
+
+.container p{
+  font: 15px/1.5 "Courier New";
+  color:#ffffff;
+
+}
+
+.container a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.headercontainer{
+  width: 100%;
+  max-width:1080px;
+  margin:auto;
+  overflow:hidden;
+  font-family: 'Amatic SC', sans-serif;
+}
+
+header{
+  background-color: #465150;
+  min-height: 60px;
+  padding-top: 5px;
+  border-bottom: #717387 4px solid;
+
+}
+
+header #navbar-right{
+  float: right;
+}
+
+header #navbar-left{
+  float: left;
+}
+
+header li{
+  float: left;
+  display: inline;
+  padding: 0 50px 0 0px;
+}
+
+header a{
+  color: #2e3bad;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header a:hover{
+  color: #adf7f3;
+}
+
+header .current a{
+  color: #adf7f3;
+}
+
+#logo{
+  display: block;
+  margin: auto;
+  position: absolute;
+}
+
+
+footer{
+  min-height: 50px;
+  border-top: #717387 4px solid;
+  background: #465150;
+  color: #ffffff;
+  font-family: 'Amatic SC', sans-serif;
+  font-size: 18px;
+}
+
+footer #main-footer{
+  width: 100%;
+  max-width:1080px;
+  float:left;
+  padding-left: 10px;
+
+}
+
+footer #scrollup{
+  float: right;
+}
+
+/*for index.html*/
+
+.contact-title{
+  margin-top: 50px;
+}
+
+form{
+  margin-top: 20px;
+}
+
+.form-control{
+  width: 60%;
+  font: 15px/1.5 "Courier New";
+  color: #e3e4ed;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #465150;
+  margin-bottom: 20px;
+}
+
+/*for destinations.html*/
+
+.row {
+    margin: 0px -20px;
+    float: center;
+}
+
+/* Add padding BETWEEN each column of destinations*/
+.row,
+.row > .column {
+    padding: 10px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 30%;
+    display: none;  /*Hide columns by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: #e3e4ed;
+    padding: 6px;
+}
+
+.content h3{
+  text-align: center;
+}
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+
+#MyDestButtons{
+  padding-right: 20px;
+  float: center;
+}
+/* Style the buttons */
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 12px;
+  margin: 0px 5px 5px 0px;
+  background-color: #e3e4ed;
+  cursor: pointer;
+  border-radius: 2px;
+  font-family: 'Amatic SC', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+/*  text-transform: uppercase;*/
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  background-color: #717387;
+  color: white;
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
+  background-color: #717387;
+  color: white;
+}
+
+/*for images of destinations*/
+
+.content {
+    position: relative;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.content:hover .image {
+  opacity: 0.3;
+}
+
+.content:hover .middle {
+  opacity: 1;
+}
+
+.dest_text {
+  background-color: #717387;
+  border-radius: 2px;
+  color: white;
+  padding: 8px;
+  font-size: 24px;
+}
+
+.dest_text a:link, a:visited {
+  background-color: #717387;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+
+.youtube-video{
+  max-width: 1080px;
+  position: relative;
+  margin: auto;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1080px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.myslides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3vw;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 2.2vw;
+  font-family: 'Amatic SC', sans-serif;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+#scrollup {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 100px;
+  font-family: 'Amatic SC', sans-serif;
+  font-size: 2vw;
+  font-weight: bold;
+  color: #465150;
+  background-color: #e3e4ed;
+  border: 2px solid #717387;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+#scrollup:hover {
+  background-color: #717387;
+  border: 2px solid #e3e4ed;
+  color: white;
+}
+
+
+@media(max-width: 768px){
+  header #navbar-right{
+    float:none;
+    align:center;
+    width:100%;
+  }
+}
