@@ -1,0 +1,15 @@
+{
+  "name": "hikingwithania",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+ "homepage": "https://AniaZientek.github.io/hikingwithania", "dependencies": {
+    "gh-pages": "^2.0.0"
+  }
+}

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hiking with Ania">
+    <meta name="keywords" content="Ania, travel, map, hiking, geography, destinations">
+    <meta name="author" content="Ania Zientek">
+    <title>HwA | Destinations</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/logo_tab.png">
+    <link href="https://fonts.googleapis.com/css?family=K2D|Nunito|Amatic+SC:400,700" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <div class="headercontainer">
+        <div id="navbar-right">
+          <ul>
+            <li><a href="index.html">About</a></li>
+            <li class="current"><a href="destinations.html">Destinations</a></li>
+            <li><a href="general.html">General&nbsptips</a></li>
+          </ul>
+        </div>
+        <div id="logo">
+          <img src="./img/logo.png" alt="logo_img" width="80px">
+        </div>
+      </div>
+    </header>
+<!--  <iframe width="560" height="315" src="https://www.youtube.com/embed/igKHQhe5NOw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+-->
+    <div class="container">
+      <div id="MyDestButtons">
+        <button class="btn active" onclick="filterSelection('all')">Show all</button>
+        <button class="btn" onclick="filterSelection('Austria')">Austria</button>
+        <button class="btn" onclick="filterSelection('Canada')">Canada</button>
+        <button class="btn" onclick="filterSelection('Croatia')">Croatia</button>
+        <button class="btn" onclick="filterSelection('Czech Republic')">Czech Republic</button>
+        <button class="btn" onclick="filterSelection('Germany')">Germany</button>
+        <button class="btn" onclick="filterSelection('New Zealand')">New Zealand</button>
+        <button class="btn" onclick="filterSelection('Poland')">Poland</button>
+        <button class="btn" onclick="filterSelection('Portugal')">Portugal</button>
+        <button class="btn" onclick="filterSelection('Slovakia')">Slovakia</button>
+        <button class="btn" onclick="filterSelection('Slovenia')">Slovenia</button>
+<!--        <button class="btn" onclick="filterSelection('Spain')">Spain</button> -->
+        <button class="btn" onclick="filterSelection('UK')">UK</button>
+        <button class="btn" onclick="filterSelection('USA')"> USA</button>
+      </div>
+
+    <!-- Portfolio Gallery Grid -->
+      <div class="row">
+        <div class="column Canada">
+          <div class="content">
+            <img src="./img/dest_cover/banff_cover.jpg" alt="Banff National Park" class="image" style="width:100%">
+            <div class="middle">
+                <div class="dest_text"><a href="banff.html">Banff National&nbspPark</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column Germany">
+          <div class="content">
+          <img src="./img/dest_cover/berchtesgaden_cover.jpg" alt="Berchtesgaden National Park" class="image" style="width:100%">
+            <div class="middle">
+                <div class="dest_text"><a href="berchtesgaden.html">Berchtesgaden National&nbspPark</a></div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="column Canada">
+          <div class="content">
+          <img src="./img/dest_cover/glacier_cover.jpg" alt="Glacier National Park" class="image" style="width:100%">
+            <div class="middle">
+                <div class="dest_text"><a href="glacier.html">Glacier National&nbspPark</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column USA">
+          <div class="content">
+          <img src="./img/dest_cover/grand_canyon_cover.jpg" alt="Grand Canyon National Park" class="image" style="width:100%">
+            <div class="middle">
+                <div class="dest_text"><a href="grand-canyon.html">Grand&nbspCanyon National Park</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column Canada">
+          <div class="content">
+          <img src="./img/dest_cover/jasper_cover.jpg" alt="Jasper National Park" class="image" style="width:100%">
+            <div class="middle">
+                <div class="dest_text"><a href="jasper.html">Jasper National&nbspPark</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column Czech Republic">
+          <div class="content">
+          <img src="./img/dest_cover/kralicky_sneznik_cover.jpg" alt="CHKO Kralicky Sneznik" class="image" style="width:100%">
+            <div class="middle">
+                <div class="dest_text"><a href="kralicky-sneznik.html">CHKO Králický&nbspSněžník</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column Czech Republic">
+          <div class="content">
+          <img src="./img/dest_cover/sumava_cover.jpg" alt="CHKO Šumava" class="image" style="width:100%">
+            <div class="middle">
+                <div class="dest_text"><a href="kralicky-sneznik.html">CHKO Šumava</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column Portugal">
+          <div class="content">
+          <img src="./img/dest_cover/madeira_cover.jpg" alt="Madeira" class="image" style="width:100%">
+            <div class="middle">
+                <div class="dest_text"><a href="madeira.html">Madeira</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column Canada">
+          <div class="content">
+          <img src="./img/dest_cover/revelstoke_cover.jpg" alt="Revelstoke National Park" class="image" style="width:100%">
+            <div class="middle">
+                <div class="dest_text"><a href="revelstoke.html">Revelstoke National&nbspPark</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column Slovenia">
+          <div class="content">
+          <img src="./img/dest_cover/triglavski_cover.jpg" alt="Triglavski Narodni Park" class="image" style="width:100%">
+            <div class="middle">
+                <div class="dest_text"><a href="triglavski-np.html">Triglavski Narodni&nbspPark</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column Canada">
+          <div class="content">
+          <img src="./img/dest_cover/yoho_cover.jpg" alt="Yoho National Park" class="image" style="width:100%">
+            <div class="middle">
+                <div class="dest_text"><a href="yoho.html">Yoho National&nbspPark</a></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- END GRID -->
+    <button onclick="topFunction()" id="scrollup" title="Go to top">Top</button>
+    <footer>
+      <div class="container">
+        <div id="main-footer">
+          <p>Hiking with Ania &copy; 2018</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+<!--filter destinations by location-->
+  <script>
+  filterSelection("all")
+  function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("column");
+    if (c == "all") c = "";
+    for (i = 0; i < x.length; i++) {
+      RemoveClass(x[i], "show");
+      if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+    }
+  }
+
+  function AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+    }
+  }
+
+  function RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      while (arr1.indexOf(arr2[i]) > -1) {
+        arr1.splice(arr1.indexOf(arr2[i]), 1);
+      }
+    }
+    element.className = arr1.join(" ");
+  }
+
+
+  // Add active class to the current button (highlight it)
+  var btnContainer = document.getElementById("MyDestButtons");
+  var btns = btnContainer.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function(){
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+</script>
+
+<!-- Scrolling up; When the user scrolls down 20px from the top of the document, show the button-->
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("scrollup").style.display = "block";
+    } else {
+        document.getElementById("scrollup").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
