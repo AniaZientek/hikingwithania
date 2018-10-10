@@ -61,13 +61,13 @@ header{
 
 header #navbar-right{
   float: right;
-  clear: both;
+/*  clear: both;*/
 
 }
 
 header li{
   display: inline;
-  padding: 0 30px 0 60px;
+  padding: 0 40px 0 60px;
 }
 
 header a{
@@ -86,6 +86,10 @@ header .current a{
   color: #adf7f3;
 }
 
+header #navbar-left{
+  float: left;
+}
+
 header #logo{
   display: block;
   margin: auto;
@@ -95,6 +99,7 @@ header #logo{
   clear: both;
 
 }
+/*for articles title*/
 
 
 footer{
