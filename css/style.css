@@ -61,20 +61,22 @@ header{
 
 header #navbar-right{
   float: right;
+
 }
 
 header #navbar-left{
   float: left;
+  clear: right;
+
 }
 
 header li{
-  float: left;
   display: inline;
   padding: 0 50px 0 0px;
 }
 
 header a{
-  color: #2e3bad;
+  color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
   font-size: 24px;
