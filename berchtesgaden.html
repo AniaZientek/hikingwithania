@@ -81,41 +81,41 @@
     <div class="container">
       <h2>When: </h2>
       <p>20 - 26th August 2017</p>
+      <p id="cs">CS // 20. - 26. srpna 2017</p>
       <h2>Where we slept: </h2>
       <p><a href="http://www.camping-grafenlehen.de" target="_blank">Campingplatz Grafenlehen</a></p>
       <p>Price for 6 nights (1 pitch, 2 small tents, 3 people, 1 car) was ca €250</p>
-      <h2>Hike 1</h2>
-        <h3>Popis</h3>
-        <p>Trasy</p>
-        <p>View trail on <a href="https://mapy.cz/s/35eXl"> mapy.cz</a></p>
-      <h2>Hike 2</h2>
-        <p>Popis</p>
-        <p>Trasy</p>
-        <p>Odkaz na mapy.cz</p>
-      <h2>Hike 3</h2>
-        <p>Popis</p>
-        <p>Trasy</p>
-        <p>Odkaz na mapy.cz</p>
+      <p id="cs">CS // Cena za 6 nocí (1 auto, 3 lidi a 1 stanovací místo, na které jsme postavili 2 malé stany) byla zhruba €250</p>
+      <br>
+      <h2>Hike 1 - Purtschellerhaus 1692 m</h2>
+      <p>View trail on <a href="https://mapy.cz/s/38ob5" target="_blank"> mapy.cz</a></p>
+      <p>English version</p>
+      <p id="cs">CS //
+        Ráno se balíme a jedeme do Obersalzbergu, kolem Muzea Dokumentace a odjezdového místa autobusů směřujících na&nbspKehlstein.
+        Zde jsou všechna parkoviště zpoplatněná, nicméně o&nbsp1&nbspkm dále (GPS:&nbsp47.6306639N,&nbsp13.0541522E) nalézáme parkoviště zdarma.
+        Stezka je celou dobu dobře značená. První kilometr jdeme po asfaltce, jakmile narazíme na&nbspřeku, tak scházíme z&nbspcesty na&nbsppolňačku. Po 50&nbspm odbočíme vlevo a&nbsppo&nbspmostě přecházíme řeku.
+        Po 100&nbspm odbočíme vpravo a pokračujeme lesní cestičkou s&nbspmírným stoupáním. Za další 2&nbspkm vycházíme z&nbsplesíku na&nbsplouku a přicházíme k&nbsphlavní cestě. Tu přejdeme a za ní vede příkřejší cesta.
+        Zhruba za&nbsp1,5&nbspkm se dostaneme na sedlo. Nejdříve se vydáváme vpravo, směrem na horskou chatu Purtschellerhaus. Cesta vede po dřevěných schodech (někdy i žebříku), které jsou vážně velkou pomocí, protože svah je velmi strmý a kluzký.
+        Cestou se snažíme vyhnout vyhýbat kravským lejnům, no ne vždy se to dařilo&nbsp:) Na&nbspchatě s&nbsptím však počítají, proto se všichni návštěvníci musí povinně zout a&nbspobout přezůvky.
+        Dáváme si zasloužené pivo a polévku. Vzhledem k&nbspmlhavému počasí a nízké teplotě se rozhodneme již dále nepokračovat. Scházíme dolů a na sedle se ještě rozhodneme vyběhnout protější kopec na vyhlídku Ahornbüchsenkopf.
+        Opět scházíme na sedlo a stejnou cestou dolů k&nbspautu.
+      </p>
+      <br>
 
-        <!-- mapycz
-        <div id="controls"><div class="selectbtn">Select layer: </div>
-           <select>
-              <option>Turist</option>
-              <option>Aerial</option>
-              <option>Base</option>
-           </select>
-         </div>
-         <div id="mapycz" style="height:400px"></div>
-         -->
-
+      <h2>Hike 2 - Watzmannhaus 1930 m</h2>
+        <p>View trail on <a href="https://mapy.cz/s/35eXl" target="_blank"> mapy.cz</a></p>
+        <p>English version</p>
+        <p id="cs">CS //
 
 
     <div class="youtube-video">
       <h2>Check out my video</h2>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/9OVX3Bnr0N8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
+    <!-- scroll up button-->
     <button onclick="topFunction()" id="scrollup" title="Go to top">Top</button>
     </div>
+
     <footer>
       <div class="container">
         <div id="main-footer">
@@ -173,46 +173,3 @@
       document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }
   </script>
-
-<!-- mapycz javascript
-  <script>
-  var center = SMap.Coords.fromWGS84(12.9882231, 47.5886942);
-  var m = new SMap(JAK.gel("mapycz"), center, 12);
-  var layers = {};
-
-  layers[SMap.DEF_TURIST] = m.addDefaultLayer(SMap.DEF_TURIST);
-  layers[SMap.DEF_OPHOTO] = m.addDefaultLayer(SMap.DEF_OPHOTO);
-  layers[SMap.DEF_HYBRID] = m.addDefaultLayer(SMap.DEF_HYBRID);
-  layers[SMap.DEF_BASE] = m.addDefaultLayer(SMap.DEF_BASE);
-  layers[SMap.DEF_TURIST].enable(); /*default layer - turist*/
-  m.addDefaultControls();
-
-  var switchLayer = function(e, elm) {
-      for (var p in layers) { layers[p].disable(); }
-      switch (elm.selectedIndex) {
-          case 0:
-              layers[SMap.DEF_TURIST].enable();
-          break;
-          case 1:
-              layers[SMap.DEF_OPHOTO].enable();
-              layers[SMap.DEF_HYBRID].enable();
-          break;
-          case 2:
-              layers[SMap.DEF_BASE].enable();
-          break;
-      }
-  }
-
-  var s = JAK.mel("select");
-  JAK.gel("controls").innerHTML = "Select layer: ";
-  JAK.gel("controls").appendChild(s);
-  var names = ["Turist", "Aerial","Base"]
-  for (var i=0; i<names.length; i++) {
-      var o = JAK.mel("option");
-      o.innerHTML = names[i];
-      s.appendChild(o);
-  }
-  var e = JAK.Events.addListener(s, "change", window, switchLayer);
-
-  </script>
-  -->
